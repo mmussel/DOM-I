@@ -40,3 +40,62 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let aTags = document.querySelectorAll('a')
+
+
+aTags[0].textContent = "Service"
+
+aTags[1].textContent = "Product"
+
+aTags[2].textContent = "Vision"
+
+aTags[3].textContent = "Features"
+
+aTags[4].textContent = "About"
+
+aTags[5].textContent = "Product"
+
+
+
+let mainHeading = document.querySelector('h1')
+mainHeading.textContent = siteContent['cta']['h1']
+
+let mainButton = document.querySelector('button')
+mainButton.innerText = "Get Started"
+
+let logo2 = document.querySelector("#cta-img")
+logo2.setAttribute('src', siteContent["cta"]["img-src"])
+
+
+let mainInfo = document.querySelectorAll('.text-content')
+
+mainInfo[0].querySelector('h4').textContent = siteContent['main-content']['features-h4']
+mainInfo[0].querySelector('p').textContent = siteContent['main-content']['features-content']
+mainInfo[1].querySelector('h4').textContent = siteContent['main-content']['about-h4']
+mainInfo[1].querySelector('p').textContent = siteContent['main-content']['about-content']
+mainInfo[2].querySelector('h4').textContent = siteContent['main-content']['services-h4']
+mainInfo[2].querySelector('p').textContent = siteContent['main-content']['services-content']
+mainInfo[3].querySelector('h4').textContent = siteContent['main-content']['product-h4']
+mainInfo[3].querySelector('p').textContent = siteContent['main-content']['product-content']
+mainInfo[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4']
+mainInfo[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
+
+let logoThree= document.querySelector("#middle-img")
+logoThree.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+
+
+let contactInfo = document.querySelector('.contact')
+
+contactInfo.getElementsByTagName('h4')[0].textContent = siteContent["contact"]["contact-h4"]
+contactInfo.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
+contactInfo.getElementsByTagName('p')[1].textContent = siteContent["contact"]["phone"]
+contactInfo.getElementsByTagName('p')[2].textContent = siteContent["contact"]["email"]
+
+
+let footer = document.querySelector('footer')
+
+footer.innerText = "Copyright Great Idea! 2018"
